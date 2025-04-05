@@ -1,6 +1,6 @@
 import json
 import jsonschema
-from src.machine import Machine  # אנחנו מייבאים את המחלקה Machine
+from src.machine import Machine
 
 vm_schema = {
     "type": "object",
