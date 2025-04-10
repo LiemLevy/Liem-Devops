@@ -1,17 +1,34 @@
 #!/bin/bash
 
-LOGFILE="LiemProject/logs/provisioning.log"
 
-echo "$(date) - INFO - Starting Nginx installation..." >> $LOGFILE
+echo "[✔] Checking if Nginx is installed..."
 
-# בדוק אם Nginx כבר מותקן
-if command -v nginx > /dev/null; then
-    echo "$(date) - INFO - Nginx is already installed." >> $LOGFILE
-    exit 0
+# Check if nginx is installed by looking for its executable
+if which "nginx" > /dev/null 2>&1; then
+    echo "[✔] Nginx is already installed."
+else
+    echo "[i] Nginx is not installed. Simulating installation..."
+
+    # Simulate updating package list
+    echo "[✔] sudo apt update"
+    sleep 1  # Simulate delay
+
+    # Simulate installing Nginx
+    echo "[✔] sudo apt install -y nginx"
+    sleep 2  # Simulate delay
 fi
 
-# רק מדפיס את הפקודות מבלי להריץ אותן
-echo "$(date) - INFO - Running: sudo apt update && sudo apt install -y nginx" >> $LOGFILE
+# Simulate starting Nginx
+echo "[✔] sudo systemctl start nginx"
+sleep 3  # Simulate delay
 
-# הדמיית התקנה (ללא הריצה בפועל)
-echo "$(date) - INFO - Nginx simulated installation." >> $LOGFILE
+# Simulate enabling Nginx to start on boot
+echo "[✔] sudo systemctl enable nginx"
+sleep 4  # Simulate delay
+
+# Simulate checking the status of Nginx
+echo "[✔] sudo systemctl status nginx"
+sleep 5  # Simulate delay
+echo "[✔] Status: Nginx is running successfully"
+
+exit 0

@@ -28,3 +28,79 @@
 2025-04-10 11:43:32,107 - INFO - Created machine: liem (windows, 10 CPUs, 22 GB RAM)
 2025-04-10 11:43:32,230 - ERROR - \u274c Simulated Nginx installation failed: /bin/bash: scripts/install_nginx.sh: No such file or directory
 
+2025-04-10 20:44:26,879 - ERROR - ❌ Simulated Nginx installation failed: bash: scripts/install_nginx.sh: No such file or directory
+
+2025-04-10 20:44:46,645 - INFO - Created machine: liem (windows, 10 CPUs, 23 GB RAM)
+2025-04-10 20:44:46,659 - ERROR - ❌ Simulated Nginx installation failed: bash: scripts/install_nginx.sh: No such file or directory
+
+2025-04-10 21:06:13,310 - ERROR - ❌ Simulated Nginx installation failed: bash: scripts/install_nginx.sh: No such file or directory
+
+2025-04-10 21:07:14,306 - INFO - Created machine: liem (windows, 10 CPUs, 2 GB RAM)
+2025-04-10 21:07:14,328 - INFO - ✅ Simulated Nginx installation completed successfully.
+2025-04-10 21:13:06,787 - INFO - ✅ Simulated Nginx installation completed successfully.
+2025-04-10 21:13:28,276 - INFO - Created machine: liem levy (windows, 10 CPUs, 23 GB RAM)
+2025-04-10 21:13:40,392 - INFO - ✅ Simulated Nginx installation completed successfully.
+2025-04-10 21:14:54,321 - INFO - Created machine: liem (windows, 10 CPUs, 23 GB RAM)
+2025-04-10 21:15:09,402 - INFO - ✅ Simulated Nginx installation completed successfully.
+2025-04-10 21:19:44,988 - INFO - Created machine: liem (windows, 19 CPUs, 23 GB RAM)
+2025-04-10 21:19:59,701 - INFO - ✅ Simulated Nginx installation completed successfully.
+2025-04-10 21:28:08,330 - INFO - Created machine: liem (windows, 10 CPUs, 23 GB RAM)
+2025-04-10 21:28:23,426 - INFO - ✅ Simulated Nginx installation completed successfully.
+2025-04-10 21:30:59,349 - INFO - Created machine: liem (windows, 11 CPUs, 23 GB RAM)
+2025-04-10 21:30:59,369 - INFO - ✅ Simulated Nginx installation completed successfully.
+2025-04-10 21:34:11,727 - INFO - Created machine: liem (windows, 122 CPUs, 12 GB RAM)
+2025-04-10 21:34:17,280 - INFO - ✅ Simulated Nginx installation completed successfully.
+2025-04-10 21:37:12,929 - INFO - Created machine: liem (windows, 12 CPUs, 12 GB RAM)
+2025-04-10 21:37:12,949 - INFO - [✔] בודק אם Nginx מותקן...
+
+2025-04-10 21:37:13,461 - INFO - [i] Nginx לא מותקן. מדמה התקנה...
+
+2025-04-10 21:37:18,477 - INFO - [✔] sudo apt update
+
+2025-04-10 21:37:18,478 - INFO - [✔] sudo apt install -y nginx
+
+2025-04-10 21:37:18,478 - INFO - [✔] sudo systemctl start nginx
+
+2025-04-10 21:37:18,478 - INFO - [✔] sudo systemctl enable nginx
+
+2025-04-10 21:37:18,478 - INFO - [✔] בדיקת סטטוס: Nginx פועל בהצלחה
+
+2025-04-10 21:37:18,479 - INFO - ✅ Simulated Nginx installation completed successfully.
+2025-04-10 21:42:55,951 - INFO - Created machine: liem levy (windows, 12 CPUs, 1 GB RAM)
+2025-04-10 21:42:55,971 - INFO - [✔] Checking if Nginx is installed...
+
+2025-04-10 21:42:55,978 - INFO - [i] Nginx is not installed. Simulating installation...
+
+2025-04-10 21:42:55,978 - INFO - [✔] sudo apt update
+
+2025-04-10 21:42:56,988 - INFO - [✔] sudo apt install -y nginx
+
+2025-04-10 21:42:59,005 - INFO - [✔] sudo systemctl start nginx
+
+2025-04-10 21:43:02,024 - INFO - [✔] sudo systemctl enable nginx
+
+2025-04-10 21:43:06,041 - INFO - [✔] sudo systemctl status nginx
+
+2025-04-10 21:43:11,059 - INFO - [✔] Status: Nginx is running successfully
+
+2025-04-10 21:43:11,060 - ERROR - LiemProject/scripts/install_nginx.sh: line 8: dpkg: command not found
+
+2025-04-10 21:43:11,060 - INFO - ✅ Simulated Nginx installation completed successfully.
+2025-04-10 21:46:08,568 - INFO - Created machine: dfsdf (windows, 12 CPUs, 12 GB RAM)
+2025-04-10 21:46:08,582 - INFO - [✔] Checking if Nginx is installed...
+
+2025-04-10 21:46:08,588 - INFO - [i] Nginx is not installed. Simulating installation...
+
+2025-04-10 21:46:08,588 - INFO - [✔] sudo apt update
+
+2025-04-10 21:46:09,598 - INFO - [✔] sudo apt install -y nginx
+
+2025-04-10 21:46:11,608 - INFO - [✔] sudo systemctl start nginx
+
+2025-04-10 21:46:14,627 - INFO - [✔] sudo systemctl enable nginx
+
+2025-04-10 21:46:18,644 - INFO - [✔] sudo systemctl status nginx
+
+2025-04-10 21:46:23,662 - INFO - [✔] Status: Nginx is running successfully
+
+2025-04-10 21:46:23,663 - INFO - ✅ Simulated Nginx installation completed successfully.

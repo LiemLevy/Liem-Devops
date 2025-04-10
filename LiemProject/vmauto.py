@@ -78,19 +78,40 @@ logging.basicConfig(
 
 def run_nginx_installation_script():
     try:
-        # הרצת סקריפט Bash שמדמה את ההתקנה
-        result = subprocess.run(
-            ["bash", "scripts/install_nginx.sh"],  # הקפד שהנתיב לסקריפט נכון
-            check=True,
-            capture_output=True,
+        # הפעלת הסקריפט עם Popen
+        process = subprocess.Popen(
+            ["bash", "LiemProject/scripts/install_nginx.sh"],
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
             text=True
         )
-        logging.info("✅ Simulated Nginx installation completed successfully.")
-        print(result.stdout)  # מדפיס את הפלט המוחזר מהסקריפט
-    except subprocess.CalledProcessError as e:
-        # אם יש שגיאה במהלך הריצה
-        logging.error(f"❌ Simulated Nginx installation failed: {e.stderr}")
-        print("Error occurred while simulating Nginx installation.")
 
-# קריאה לפונקציה להריץ את הסקריפט
+        # קבלת פלט שורה אחרי שורה בזמן אמת (כמו tail)
+        for line in process.stdout:
+            print(line, end="")  # הדפס את כל שורה מהפלט
+            logging.info(line)   # שמור בלוג את כל הפלט
+
+        # בדוק אם יש שגיאות ב- stderr (אם יש)
+        stderr = process.stderr.read()
+        if stderr:
+            print(stderr)
+            logging.error(stderr)
+
+        process.wait()  # המתן לסיום התהליך
+        if process.returncode == 0:
+            logging.info("✅ Simulated Nginx installation completed successfully.")
+        else:
+            logging.error("❌ Simulated Nginx installation failed.")
+
+    except FileNotFoundError:
+        logging.error("❌ Script file not found.")
+        print("Script file not found or path is incorrect.")
+    except subprocess.CalledProcessError as e:
+        logging.error(f"❌ Error running the script: {e}")
+        print(f"Error occurred while running the script: {e}")
+    except Exception as e:
+        logging.error(f"❌ Unexpected error: {str(e)}")
+        print(f"An unexpected error occurred: {str(e)}")
+
+
 run_nginx_installation_script()
