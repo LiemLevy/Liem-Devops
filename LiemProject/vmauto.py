@@ -1,6 +1,10 @@
 import json
 import jsonschema
+import subprocess
+import logging
+
 from src.machine import Machine
+
 
 vm_schema = {
     "type": "object",
@@ -65,3 +69,28 @@ else:
     print("⛔️ Bad input")
 
 save_vm_data_to_json(vm_data)
+
+logging.basicConfig(
+    filename="LiemProject/logs/provisioning.log",
+    level=logging.INFO,
+    format="%(asctime)s - %(levelname)s - %(message)s"
+)
+
+def run_nginx_installation_script():
+    try:
+        # הרצת סקריפט Bash שמדמה את ההתקנה
+        result = subprocess.run(
+            ["bash", "scripts/install_nginx.sh"],  # הקפד שהנתיב לסקריפט נכון
+            check=True,
+            capture_output=True,
+            text=True
+        )
+        logging.info("✅ Simulated Nginx installation completed successfully.")
+        print(result.stdout)  # מדפיס את הפלט המוחזר מהסקריפט
+    except subprocess.CalledProcessError as e:
+        # אם יש שגיאה במהלך הריצה
+        logging.error(f"❌ Simulated Nginx installation failed: {e.stderr}")
+        print("Error occurred while simulating Nginx installation.")
+
+# קריאה לפונקציה להריץ את הסקריפט
+run_nginx_installation_script()

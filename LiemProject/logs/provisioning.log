@@ -1,1 +1,30 @@
 2025-04-05 15:49:26,231 - INFO - Created machine: liem (windows, 78 CPUs, 4 GB RAM)
+2025-04-05 20:26:38,295 - INFO - Created machine: liem (linux, 10 CPUs, 8 GB RAM)
+2025-04-06 16:30:03,400 - INFO - Created machine: liem (windows, 11 CPUs, 8 GB RAM)
+2025-04-10 11:04:52,601 - INFO - Created machine: liem (windows, 10 CPUs, 8 GB RAM)
+2025-04-10 11:11:35,233 - INFO - Created machine: liem (windows, 10 CPUs, 24 GB RAM)
+2025-04-10 11:13:17,525 - INFO - Created machine: liem (windows, 10 CPUs, 24 GB RAM)
+2025-04-10 11:13:21,025 - ERROR - \u274c Nginx installation failed: /bin/bash: scripts/install_nginx.sh: No such file or directory
+
+2025-04-10 11:16:45,215 - INFO - Created machine: liem (windows, 10 CPUs, 2 GB RAM)
+2025-04-10 11:16:48,336 - ERROR - \u274c Nginx installation failed: /bin/bash: scripts/install_nginx.sh: No such file or directory
+
+2025-04-10 11:24:21,088 - INFO - Created machine: & d:/downloads/Liem-Devops/.venv/Scripts/python.exe d:/downloads/Liem-Devops/LiemProject/vmauto.py (windows, 10 CPUs, 234 GB RAM)
+2025-04-10 11:32:41,013 - INFO - Created machine: liiem (windows, 10 CPUs, 23 GB RAM)
+2025-04-10 11:32:44,741 - ERROR - \u274c Simulated Nginx installation failed: /bin/bash: scripts/install_nginx.sh: No such file or directory
+
+2025-04-10 11:34:04,292 - ERROR - \u274c Simulated Nginx installation failed: /bin/bash: scripts/install_nginx.sh: No such file or directory
+
+2025-04-10 11:34:22,420 - INFO - Created machine: sdasd (linux, 10 CPUs, 23 GB RAM)
+2025-04-10 11:34:24,511 - ERROR - \u274c Simulated Nginx installation failed: /bin/bash: scripts/install_nginx.sh: No such file or directory
+
+2025-04-10 11:36:50,267 - INFO - Created machine: sdasd (windows, 123 CPUs, 12 GB RAM)
+2025-04-10 11:36:53,482 - INFO - \u2705 Simulated Nginx installation completed successfully.
+2025-04-10 11:39:17,827 - INFO - Created machine: sdasd (windows, 123 CPUs, 12 GB RAM)
+2025-04-10 11:39:21,100 - INFO - \u2705 Simulated Nginx installation completed successfully.
+2025-04-10 11:40:16,790 - INFO - Created machine: sda (windows, 12 CPUs, 12 GB RAM)
+2025-04-10 11:40:18,885 - INFO - \u2705 Simulated Nginx installation completed successfully.
+2025-04-10 11:43:17,571 - INFO - \u2705 Simulated Nginx installation completed successfully.
+2025-04-10 11:43:32,107 - INFO - Created machine: liem (windows, 10 CPUs, 22 GB RAM)
+2025-04-10 11:43:32,230 - ERROR - \u274c Simulated Nginx installation failed: /bin/bash: scripts/install_nginx.sh: No such file or directory
+
