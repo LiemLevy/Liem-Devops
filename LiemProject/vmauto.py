@@ -54,7 +54,7 @@ def save_vm_data_to_json(vm_data):
     try:
         jsonschema.validate(instance=vm_data, schema=vm_schema)
         print("✅ JSON schema validation passed.")
-        with open('LiemProject/instances.json', 'w') as f:
+        with open('LiemProject/configs/instances.json', 'w') as f:
             json.dump(vm_data, f, indent=4)
     except Exception as e:
         print("❌ JSON schema validation failed")
@@ -78,40 +78,18 @@ logging.basicConfig(
 
 def run_nginx_installation_script():
     try:
-        # הפעלת הסקריפט עם Popen
-        process = subprocess.Popen(
+        result = subprocess.run(
             ["bash", "LiemProject/scripts/install_nginx.sh"],
-            stdout=subprocess.PIPE,
-            stderr=subprocess.PIPE,
+            check=True,
+            capture_output=True,
             text=True
         )
-
-        # קבלת פלט שורה אחרי שורה בזמן אמת (כמו tail)
-        for line in process.stdout:
-            print(line, end="")  # הדפס את כל שורה מהפלט
-            logging.info(line)   # שמור בלוג את כל הפלט
-
-        # בדוק אם יש שגיאות ב- stderr (אם יש)
-        stderr = process.stderr.read()
-        if stderr:
-            print(stderr)
-            logging.error(stderr)
-
-        process.wait()  # המתן לסיום התהליך
-        if process.returncode == 0:
-            logging.info("✅ Simulated Nginx installation completed successfully.")
-        else:
-            logging.error("❌ Simulated Nginx installation failed.")
-
-    except FileNotFoundError:
-        logging.error("❌ Script file not found.")
-        print("Script file not found or path is incorrect.")
+        logging.info("✅ Simulated Nginx installation completed successfully.")
+        print(result.stdout)
     except subprocess.CalledProcessError as e:
-        logging.error(f"❌ Error running the script: {e}")
-        print(f"Error occurred while running the script: {e}")
-    except Exception as e:
-        logging.error(f"❌ Unexpected error: {str(e)}")
-        print(f"An unexpected error occurred: {str(e)}")
+
+        logging.error(f"❌ Simulated Nginx installation failed: {e.stderr}")
+        print("Error occurred while simulating Nginx installation.")
 
 
 run_nginx_installation_script()

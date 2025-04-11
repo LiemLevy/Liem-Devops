@@ -104,3 +104,25 @@
 2025-04-10 21:46:23,662 - INFO - [✔] Status: Nginx is running successfully
 
 2025-04-10 21:46:23,663 - INFO - ✅ Simulated Nginx installation completed successfully.
+2025-04-11 07:23:42,451 - INFO - Created machine: ramil (windows, 10 CPUs, 8 GB RAM)
+2025-04-11 07:23:42,472 - INFO - [✔] Checking if Nginx is installed...
+
+2025-04-11 07:23:42,483 - INFO - [i] Nginx is not installed. Simulating installation...
+
+2025-04-11 07:23:42,483 - INFO - [✔] sudo apt update
+
+2025-04-11 07:23:43,493 - INFO - [✔] sudo apt install -y nginx
+
+2025-04-11 07:23:45,503 - INFO - [✔] sudo systemctl start nginx
+
+2025-04-11 07:23:48,523 - INFO - [✔] sudo systemctl enable nginx
+
+2025-04-11 07:23:52,543 - INFO - [✔] sudo systemctl status nginx
+
+2025-04-11 07:23:57,559 - INFO - [✔] Status: Nginx is running successfully
+
+2025-04-11 07:23:57,559 - INFO - ✅ Simulated Nginx installation completed successfully.
+2025-04-11 07:46:45,417 - INFO - Created machine: liem (windows, 10 CPUs, 23 GB RAM)
+2025-04-11 07:47:00,521 - INFO - ✅ Simulated Nginx installation completed successfully.
+2025-04-11 07:49:23,665 - INFO - Created machine: dfsf (windows, 12 CPUs, 1 GB RAM)
+2025-04-11 07:49:38,765 - INFO - ✅ Simulated Nginx installation completed successfully.
