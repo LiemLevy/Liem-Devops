@@ -1,1 +1,5 @@
-jsonschema>=4.0.0
+- Python 3.7+
+- `jsonschema` module:  
+  Install via:
+  ```bash
+  pip install jsonschema
