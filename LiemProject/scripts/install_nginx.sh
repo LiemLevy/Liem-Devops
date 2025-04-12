@@ -31,4 +31,4 @@ echo "[✔] sudo systemctl status nginx"
 sleep 5  
 echo "[✔] Status: Nginx is running successfully"
 
-exit 0
+exit 0

@@ -66,7 +66,7 @@ if vm_data:
     print("✅ Good input")
     print(vm_data)
 else:
-    print("⛔️ Bad input")
+    print("⛔ Bad input")
 
 save_vm_data_to_json(vm_data)
 

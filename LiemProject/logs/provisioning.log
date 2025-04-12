@@ -3,3 +3,20 @@
 2025-04-11 07:47:00,521 - INFO - ✅ Simulated Nginx installation completed successfully.
 2025-04-11 07:49:23,665 - INFO - Created machine: dfsf (windows, 12 CPUs, 1 GB RAM)
 2025-04-11 07:49:38,765 - INFO - ✅ Simulated Nginx installation completed successfully.
+2025-04-12 12:08:58,314 - INFO - Created machine: liem (windows, 12 CPUs, 1 GB RAM)
+2025-04-12 12:09:04,209 - ERROR - \u274c Simulated Nginx installation failed: LiemProject/scripts/install_nginx.sh: line 2: $'\r': command not found
+LiemProject/scripts/install_nginx.sh: line 3: $'\r': command not found
+LiemProject/scripts/install_nginx.sh: line 5: $'\r': command not found
+LiemProject/scripts/install_nginx.sh: line 6: $'\r': command not found
+LiemProject/scripts/install_nginx.sh: line 35: syntax error: unexpected end of file
+
+2025-04-12 12:15:42,379 - INFO - Created machine: liem (windows, 123 CPUs, 12 GB RAM)
+2025-04-12 12:15:45,581 - ERROR - \u274c Simulated Nginx installation failed: b"LiemProject/scripts/install_nginx.sh: line 2: $'\\r': command not found\nLiemProject/scripts/install_nginx.sh: line 3: $'\\r': command not found\nLiemProject/scripts/install_nginx.sh: line 5: $'\\r': command not found\nLiemProject/scripts/install_nginx.sh: line 6: $'\\r': command not found\nLiemProject/scripts/install_nginx.sh: line 35: syntax error: unexpected end of file\n"
+2025-04-12 12:18:41,317 - INFO - Created machine: liem (windows, 123 CPUs, 12 GB RAM)
+2025-04-12 12:18:59,406 - INFO - \u2705 Simulated Nginx installation completed successfully.
+2025-04-12 12:22:37,637 - INFO - Created machine: liem (windows, 132 CPUs, 12 GB RAM)
+2025-04-12 12:25:08,819 - INFO - Created machine: & "C:/Program Files/Python311/python.exe" "d:/downloads/New folder (2)/Liem-Devops/LiemProject/main.py" (windows, 123 CPUs, 12 GB RAM)
+2025-04-12 12:25:34,673 - INFO - Created machine: liem (windows, 123 CPUs, 12 GB RAM)
+2025-04-12 12:25:52,704 - INFO - \u2705 Simulated Nginx installation completed successfully.
+2025-04-12 12:35:52,750 - INFO - Created machine: liem (windows, 123 CPUs, 12 GB RAM)
+2025-04-12 12:36:10,762 - INFO - \u2705 Simulated Nginx installation completed successfully.
